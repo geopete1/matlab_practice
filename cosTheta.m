@@ -4,6 +4,7 @@ theta = -2*pi:2*pi/1000:2*pi;
 a = cos(theta);
 b = sin(theta);
 c = tan(theta);
+noise=rand(length(theta),1)';
 
 ah = cosh(theta);
 bh = sinh(theta);
@@ -29,3 +30,6 @@ xlabel('\theta','FontName','Arial','FontSize',16)
 ylabel('Value of the hyperbolic trig function of \theta')
 set(gca,'YLim',[-2 2],'XLim',[-2 2])
 grid on
+
+figure
+plot(theta,b+noise,'g')
