@@ -1,0 +1,37 @@
+Git
+go to main folder cd ~, then Desktop
+type git if something apperas it's OK
+
+git config --global user.name "JFPA" / establish username
+git config --global user.email "jf.paniagua.ar@gmail.com" / user email
+create a folder inside Desktop named 'planets'
+git init / make local folder the git repository
+git status / status of repository
+nano mars.txt / create a text file with stuff...
+git add mars.txt
+git status / if green, good
+git commit -m "Start notes on Mars" / explanation on change done to file
+
+if file is changed, git does not remember unless I commit the file
+
+git diff / compare the current file to the one last committed to the repository
+
+rm mars.txt / remove file DEFINITELY
+git checkout -- mars.txt / get latest file stored in repository
+git checkout HEAD~1 mars.txt / get last file commited under this name, change number 1 to get different versions
+
+git remote add origin https://github.com/jfpa/planets.git    / add origin to the address of my repository in GitHub
+
+git remote -v  / check
+
+git add Colombia.md
+
+git commit -m 'message'
+
+git push origin master   / push objects in local git to GitHub, ask for credentials
+
+In GitHub, go to collaboration folder of Mariela, fork, and clone, copy this https://github.com/jfpa/git-collaboration.git, paste in terminal as
+git clone https://github.com/jfpa/git-collaboration.git
+
+After I push changes to my repository, I need to pull a request to Mariela's one to include my changes
+Go to mperignon / git-collaboration, New pull request
